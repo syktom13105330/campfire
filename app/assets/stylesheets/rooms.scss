@@ -1,3 +1,24 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// .kaiwa-img-left {
+//   margin: 0;
+//   float: left;
+//   width: 60px;
+//   height: 60px;
+//   margin-right: -70px;
+// }
+// .kaiwa-img-right {
+//   margin: 0;
+//   float: right;
+//   width: 60px;
+//   height: 60px;
+//   margin-left: -70px;
+// }
+.kaiwa figure img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin: 0;
+}

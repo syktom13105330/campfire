@@ -1,0 +1,10 @@
+<h1>Chat Room List</h1>
+
+<div>
+  <ul>
+    <% @rooms.each do |r| %>
+      <li><%= link_to "Room#{r.id}", "/rooms/#{r.id}" %></li>
+    <% end %>
+  </ul>
+  <li><%= link_to "NEW ROOM", "/rooms/new" %></li>
+</div>

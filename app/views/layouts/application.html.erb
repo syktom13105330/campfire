@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <%= link_to "サインup", "/users/sign_up" %><br>
+    <%= link_to "サインin", "/users/sign_in" %><br>
+    <%= link_to "サインout", "/users/sign_out", :method => "delete" %><br>
+    <% if user_signed_in? %>
+    Your Account No: <%= current_user.id %>
+    <% end %>
+   
     <%= yield %>
   </body>
 </html>
