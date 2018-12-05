@@ -13,6 +13,6 @@ class RoomsController < ApplicationController
   
   def show
     @room = Room.find(params[:room_id])
-    @messages = @room.messages.order(:id)
+    @messages = @room.messages.order(:created_at)
   end  
 end
